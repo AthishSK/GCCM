@@ -1,6 +1,6 @@
 <script>
     import { onMount } from "svelte";
-    import { CreateIssues } from "../lib/api.js";
+    import { createIssue } from "../lib/api.js";
     import DataTable from "./DataTable.svelte";
 
     export let selectedRepo;
@@ -13,7 +13,7 @@
             return;
         }
         try {
-            await CreateIssues(selectedRepo, issueTitle, issueDescription);
+            await createIssue(selectedRepo, issueTitle, issueDescription);
             alert("Issue created successfully!");
             issueTitle = "";
             issueDescription = "";

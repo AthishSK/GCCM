@@ -44,10 +44,6 @@
         background-color: #f8d4d4;
         color: #7f1a1a;
     }
-    .info {
-        background-color: #d4e4f8;
-        color: #1a3f7f;
-    }
     .code-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
